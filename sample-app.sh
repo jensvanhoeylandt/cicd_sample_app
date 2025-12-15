@@ -2,6 +2,7 @@
 set -euo pipefail
 
 rm -rf tempdir
+docker rm -f samplerunning >/dev/null 2>&1 || true
 mkdir tempdir
 mkdir tempdir/templates
 mkdir tempdir/static
